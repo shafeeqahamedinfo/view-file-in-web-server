@@ -1,0 +1,25 @@
+<?php
+$host = "sql305.infinityfree.com";
+$user = "if0_40023564";   // change if needed
+$pass = "pkA1ha2s8NW";       // change if password exists
+$dbname = "if0_40023564_db";
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
+}
+?>
+
+<?php
+$host = "localhost";
+$user = "root";   // change if needed
+$pass = "";       // change if password exists
+$dbname = "file_upload_demo";
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
+}
+?>
